@@ -1,0 +1,82 @@
+@import 'globals';
+
+@mixin gap-top() {
+    margin-top: 10px;
+}
+@mixin gap-left() {
+    padding-left: 5px;
+}
+@mixin gap-right() {
+    padding-right: 5px;
+}
+
+// always active top gap
+.gap-top {
+    @include gap-top();
+}
+
+.gap-left {
+    @include gap-left();
+}
+
+.gap-right {
+    @include gap-right();
+}
+
+
+// xs devices
+@media (max-width: $width-xs-end) {
+    // top gap only active on xs devices
+    .gap-top-xs {
+        @include gap-top();
+    }
+    .gap-left-xs {
+        @include gap-left();
+    }
+    .gap-right-xs {
+        @include gap-right();
+    }
+}
+
+// sm devices
+@media (min-width: $width-sm-start) {
+    // top gap only active on sm devices
+    .gap-top-sm {
+        @include gap-top();
+    }
+    .gap-left-sm {
+        @include gap-left();
+    }
+    .gap-right-sm {
+        @include gap-right();
+    }
+}
+
+// md devices
+@media (min-width: $width-md-start) {
+    // top gap only active on md devices
+    .gap-top-md {
+        @include gap-top();
+    }
+    .gap-left-md {
+        @include gap-left();
+    }
+    .gap-right-md {
+        @include gap-right();
+    }
+}
+
+// lg devices
+@media (min-width: $width-lg-start) {
+    // top gap only active on lg devices
+    .gap-top-lg {
+        @include gap-top();
+    }
+    .gap-left-lg {
+        @include gap-left();
+    }
+    .gap-right-lg {
+        @include gap-right();
+    }
+}
+
